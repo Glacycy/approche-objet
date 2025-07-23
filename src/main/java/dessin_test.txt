@@ -1,0 +1,10 @@
+#Fichier de sauvegarde de dessin
+
+# Format: type x y couleur [paramètres spécifiques]
+
+
+Carre 50 50 Vert 15
+Rectangle 10 10 Rouge 20 30
+Rond 80 20 Bleu 10
+Segment 5 5 Bleu 25 true
+CarreHerite 30 30 Noir 12

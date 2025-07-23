@@ -38,6 +38,12 @@ public class TestPersonne {
         Personne personne1 = new Personne("Dupont", "Jean", adresse1);
 
         AdressePostale adresse2 = new AdressePostale(7, "bd ST Germain", 34000, "Montpellier");
-        Personne personne2 = new Personne("Dupont", "Jean", adresse2);
+        Personne personne2 = new Personne("Dupont", "Joseph", adresse2);
+
+        personne1.setAdresse(adresse1);
+        personne2.setAdresse(adresse2);
+
+        personne1.afficherNomPrenom();
+        personne2.afficherNomPrenom();
     }
 }

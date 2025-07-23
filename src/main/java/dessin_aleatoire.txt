@@ -1,0 +1,13 @@
+#Fichier de sauvegarde de dessin
+
+# Format: type x y couleur [paramètres spécifiques]
+
+
+Rectangle 8 2 Vert 76 43
+Rectangle 5 35 Rouge 14 9
+Rectangle 56 23 Vert 5 23
+CarreHerite 21 71 Vert 21
+Carre 75 23 Jaune 21
+Carre 29 38 Noir 59
+CarreHerite 92 23 Jaune 5
+CarreHerite 86 21 Vert 4
