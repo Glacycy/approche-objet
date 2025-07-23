@@ -3,15 +3,15 @@ package fr.diginamic.maison;
 //class mère
 public abstract class Piece {
 
-    private int superficie;
+    private double superficie;
     private int numEtage;
 
-    public Piece(int superficie, int numEtage) {
+    public Piece(double superficie, int numEtage) {
         this.superficie = superficie;
         this.numEtage = numEtage;
     }
 
-    public int getSuperficie(){
+    public double getSuperficie(){
         return superficie;
     }
 
