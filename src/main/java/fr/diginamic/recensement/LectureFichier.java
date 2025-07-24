@@ -30,13 +30,14 @@ public class LectureFichier {
                         String codeRegion = tokens[0].trim();
                         String nomRegion = tokens[1].trim();
                         String codeDepartement = tokens[2].trim();
+                        String codeCommune = tokens[5].trim();
                         String nomCommune = tokens[6].trim();
 
                         String populationStr = tokens[9].trim().replaceAll("\\s", "");
                         int populationTotale = Integer.parseInt(populationStr);
 
                         Ville ville = new Ville(nomCommune, codeDepartement, nomRegion,
-                                codeRegion, populationTotale);
+                                codeRegion, codeCommune, populationTotale);
                         villes.add(ville);
 
                     } catch (NumberFormatException e) {

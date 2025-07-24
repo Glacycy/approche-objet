@@ -6,14 +6,14 @@ public class RecherchePopuVille extends MenuService {
 
     @Override
     public void traiter(Recensement recensement, Scanner scanner) {
-        System.out.print("Entrez le nom de la ville : ");
+        System.out.print("Entrez le nom ou le code de la ville : ");
         String saisie = scanner.nextLine();
         String saisieNormalisee = Utils.normaliser(saisie);
 
         for (Ville ville : recensement.getVilles()) {
-            String nomVilleNormalise = Utils.normaliser(ville.getNom());
+            if (ville.getCodeCommune().equals(saisie) ||
+                    Utils.normaliser(ville.getNom()).contains(saisieNormalisee)) {
 
-            if (nomVilleNormalise.contains(saisieNormalisee)) {
                 System.out.println("Population de " + ville.getNom() + " : " +
                         ville.getPopulationTotale() + " habitants");
                 return;

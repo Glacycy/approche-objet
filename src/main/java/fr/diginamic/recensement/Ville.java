@@ -9,12 +9,14 @@ public class Ville {
     private String codeCommune;
     private int populationTotale;
 
-    public Ville(String nom, String codeDepartement, String nomRegion, String codeRegion, int populationTotale) {
+    public Ville(String nom, String codeDepartement, String nomRegion, String codeRegion, String codeCommune, int populationTotale) {
         this.nom = nom;
         this.codeDepartement = codeDepartement;
         this.nomRegion = nomRegion;
         this.populationTotale = populationTotale;
         this.codeRegion = codeRegion;
+        this.codeCommune = codeCommune;
+        this.nomCommune = nom;
     }
 
     public String getNom() {
